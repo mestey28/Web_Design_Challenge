@@ -2,30 +2,101 @@
 <html lang='en-us'>
 
 <head>
-        <title>Latitude- Latitude Analysis</title>
+        <title>Data</title>
         <meta characterset="utf=8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">       
+        <link rel="stylesheet" href="style.css">  
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+        
 </head>
-
 <body>
-    <nav class="navBar"
-        <ul>
-            <li>
-                <a href="#">Landing Page</a>
-            </li>
-            <li>
-                <a href="#">Visualization</a>
-            </li>
-            <li>
-                <a href="#">Comparison</a>
-            </li>
-            <li>
-                <a href="#">Data</a>
-            </li>
-        </ul>
-    <!-- <h1></h1>
-    <!--image reference-->
-    <img scr=""     /> -->
+    <div class="container">
+        <nav class="navbar">
+
+        </nav>
+        <div class="navbar">
+            <a href="#home">Data</a>
+            <a href="#Comparisons">Comparisons</a>
+            <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">Visualizations
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="#">"Fig1.html">Max Temperature</a>
+              <a href="#">"Fig2.html">Humidity</a>
+              <a href="#">"Fig3.html">Cloudiness</a>
+              <a href="#">"Fig4.html">Wind Speed</a>
+            </div>
+            </div> 
+          </div>
+          
+          <h3>Welcome</h3>
+          <p>Click on the "Dropdown" link to see the dropdown menu.</p>
+          
+          <script>
+          /* When the user clicks on the button, 
+          toggle between hiding and showing the dropdown content */
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          
+          // Close the dropdown if the user clicks outside of it
+          window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+              if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+              }
+            }
+          }
+          </script>
+     <div class = "container">
+        <div class="row">
+            <div class="col-md-12 col-lg-8">
+                <div class="box">
+                    <h2 class="title">Summary: Latitude vs. X</h2>
+                    <hr>
+
+                    <img src="Visualizations/Fig1.png" class="visualization" alt="Max Temp">
+                    <p>In this project, we can see the visualization of the earlier Python API weather analysis. 
+                    The purpose of this visualization is to see how the weather changes as you get closer to the equator.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class = "col-md-12 col-lg-4">
+                <div class="box">
+                    <h3 class="title"></h3>
+                    <hr>
+
+                    <div class="container">
+                        <div class="row" style="padding-bottom:30px;">
+                            <div class="col-md-3 col-lg-6">
+                                <a class = "panel" href="Fig1.html">
+                                <img src="Visualizations/Fig1.png" class="img-responsive" alt="Max Temp"></a>
+                            </div>
+                            <div class="col-md-3 col-lg-6">
+                                <a class = "panel" href="Fig2.html">
+                                <img src="Visualizations/Fig2.png" class="img-responsive"  alt="Humidity"></a>
+                            </div>
+                        </div>
+
+                        <div class="row" style="padding-bottom:30px;">
+                            <div class="col-md-3 col-lg-6">
+                                <a class = "panel" href="Fig3.html">
+                                <img src="Visualizations/Fig3.png" class="img-responsive"  alt="Cloudiness"></a>
+                            </div>
+                            <div class="col-md-3 col-lg-6">    
+                                <a class = "panel" href="Fig4.html">
+                                <img src="Visualizations/Fig4.png" class="img-responsive" alt="Wind Speed"></a>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>      
 </body>
 </html>

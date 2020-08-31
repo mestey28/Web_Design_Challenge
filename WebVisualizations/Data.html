@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+
+<head>
+        <title>Data</title>
+        <meta characterset="utf=8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">  
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+        
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+
+        </nav>
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#Comparisons">Comparisons</a>
+            <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">Visualizations
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="#">"Fig1.html">Max Temperature</a>
+              <a href="#">"Fig2.html">Humidity</a>
+              <a href="#">"Fig3.html">Cloudiness</a>
+              <a href="#">"Fig4.html">Wind Speed</a>
+            </div>
+            </div> 
+          </div>
+          
+          <h3>Data Created from the Raw CSV File</h3>
+          <p>Click on the "Dropdown" link to see the dropdown menu.</p>
+          
+          <script>
+          /* When the user clicks on the button, 
+          toggle between hiding and showing the dropdown content */
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          
+          // Close the dropdown if the user clicks outside of it
+          window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+              if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+              }
+            }
+          }
+          </script>
+
+    <div class="table-responsive"></div>
+        <table class="table" border="1">
+            <thead>
+            <tr style="text-align: center;">
+                <th colspan="10">Data created from the raw csv file</th>
+            </tr>
+            <tr style="text-align: center;">
+                <th>City_ID</th>
+                <th>City</th>
+                <th>Coudiness</th>
+                <th>Country</th>
+                <th>Date</th>
+                <th>Humidity</th>
+                <th>Lat</th>
+                <th>Long</th>
+                <th>Max Temp</th>
+                <th>Wind Speed</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>0</td>
+                <td>jacareacanga</td>
+                <td>0</td>
+                <td>BR</td>
+                <td>1528902000</td>
+                <td>62</td>
+                <td>-6.22</td>
+                <td>-57.76</td>
+                <td>89.60</td>
+                <td>6.93</td>
+            </tr>
+            </tbody>
+        </table>    
+    </div>
+</body>
+
+
+</html>
