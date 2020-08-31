@@ -2,7 +2,7 @@
 <html lang='en-us'>
 
 <head>
-        <title>Landing Page</title>
+        <title>City Lat vs. Windspeed</title>
         <meta characterset="utf=8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">  
@@ -30,7 +30,7 @@
                 </div>
             </div> 
           </div>
-           
+          
           <script>
           /* When the user clicks on the button, 
           toggle between hiding and showing the dropdown content */
@@ -52,23 +52,29 @@
         <div class="row">
             <div class="col-md-12 col-lg-8">
                 <div class="box">
-                    <h2 class="title">Comparison: Latitude vs. X</h2>
+                    <h2 class="title">Summary: Latitude vs. Windspeed</h2>
                     <hr>
-                    <p>Click any plot for an in-depth analysis</p>
+
+                    <img src="Visualizations/Fig4.png" class="visualization" alt="Humidity">
+                    <p>Looking at a dataset of over 500 cities.
+                    <br><br> Although additional analysis is needed, based on the scatter plot most cities have a small amount of wind. The cities furthest from the equator have the greatest variance in wind speed. 
+                    </p>
+
                 </div>
             </div>
 
-            <!-- <div class = "col-md-12 col-lg-4">
-                <div class="box"> -->
-                    <!-- <h3 class="title">Visualizations</h3> -->
+
+
+            <div class = "col-md-12 col-lg-4">
+                <div class="box">
+                    <h3 class="title">Visualizations</h3>
                     <hr>
 
                     <div class="container">
                         <div class="row" style="padding-bottom:30px;">
-                            <div class="col-md-3 col-lg-6"style="padding-bottom:30px;">
-                                <div class="title" text-align:center; "></div>vs. Max. Temperature" </div>    
+                            <div class="col-md-3 col-lg-6">
                                 <a class = "panel" href="Fig1.html">
-                                <img src="Visualizations/Fig1.png" class="img-responsive" alt="Max Tempature"></a>
+                                <img src="Visualizations/Fig1.png" class="img-responsive" alt="Max Temp"></a>
                             </div>
                             <div class="col-md-3 col-lg-6">
                                 <a class = "panel" href="Fig2.html">
@@ -89,7 +95,8 @@
                     </div>
                 </div>
             </div>
-
-    </div>      
+    </div>
+    <h3> Check out the wind in Hawaii today! </h3>
+    <iframe width="800" height="600" src="https://explore.org/livecams/hawaii/hawaii-pipeline-cam"></iframe>      
 </body>
 </html>

@@ -105,4 +105,19 @@ body{
   .show {
     display: block;
   }
-  
+
+  /*Image Properties*/
+img{
+    max-width:100%;
+    height:auto;
+}
+
+.active, .panel:hover{
+    border-color:rgba(0,181,161,1);
+    border-style: solid;
+}
+.visualization{
+    max-width:80%;
+    height:auto;
+    float:left;
+}

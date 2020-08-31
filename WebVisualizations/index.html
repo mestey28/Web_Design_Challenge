@@ -2,11 +2,11 @@
 <html lang='en-us'>
 
 <head>
-        <title>Data</title>
+        <title>Landing Page</title>
         <meta characterset="utf=8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">  
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
         
 </head>
@@ -15,19 +15,19 @@
         <nav class="navbar">
 
         </nav>
-        <div class="navbar">
-            <a href="#home">Data</a>
-            <a href="#Comparisons">Comparisons</a>
-            <div class="dropdown">
-            <button class="dropbtn" onclick="myFunction()">Visualizations
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content" id="myDropdown">
-              <a href="#">"Fig1.html">Max Temperature</a>
-              <a href="#">"Fig2.html">Humidity</a>
-              <a href="#">"Fig3.html">Cloudiness</a>
-              <a href="#">"Fig4.html">Wind Speed</a>
-            </div>
+            <div class="navbar">
+                <a class="navbar" href="Data.html">Data</a>
+                <a class="navbar" href="Comparison.html">Comparison</a>
+                <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">Plots
+                <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                <a href="#">"Fig1.html">Max Temperature</a>
+                <a href="#">"Fig2.html">Humidity</a>
+                <a href="#">"Fig3.html">Cloudiness</a>
+                <a href="#">"Fig4.html">Wind Speed</a>
+                </div>
             </div> 
           </div>
           
@@ -59,16 +59,18 @@
                     <hr>
 
                     <img src="Visualizations/Fig1.png" class="visualization" alt="Max Temp">
-                    <p>In this project, we can see the visualization of the earlier Python API weather analysis. 
-                    The purpose of this visualization is to see how the weather changes as you get closer to the equator.
+                    <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accompish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+                    <br><br>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: tempature, Cloudiness, wind speed and Humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.    
                     </p>
 
                 </div>
             </div>
 
+
+
             <div class = "col-md-12 col-lg-4">
                 <div class="box">
-                    <h3 class="title"></h3>
+                    <h3 class="title">Visualizations</h3>
                     <hr>
 
                     <div class="container">
